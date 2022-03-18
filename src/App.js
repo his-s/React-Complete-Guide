@@ -1,3 +1,4 @@
+import Card from "./components/Card";
 import ExpenseItem from "./components/ExpenseItem";
 function App() {
   const expenses = [
@@ -24,7 +25,10 @@ function App() {
   return (
     <div>
       <h2>Let's get started!</h2>
-      <ExpenseItem props={expenses[0]}></ExpenseItem>
+
+      <Card className="expenses">
+        <ExpenseItem props={expenses[0]}></ExpenseItem>
+      </Card>
     </div>
   );
 }
